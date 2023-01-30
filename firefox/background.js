@@ -28,7 +28,12 @@ function patchCookieValue(value) {
       value = value + "&f6=400";
     if(!value.includes("f5"))  // User hasn't made yet his own choice about autoplay
       value = value + "&f5=30000";  // Disable it
+    if(!value.includes("hl"))  // User hasn't made yet his own choice about autoplay
+      value = value + "&hl=en";  // Disable it
+    if(!value.includes("tz"))  // User hasn't made yet his own choice about autoplay
+      value = value + "&tz=Europe.Istanbul";  // Disable it 
   }
+  // f6=400&f7=100&hl=en&tz=Europe.Istanbul&f4=4000000&f5=30000
   return value;
 }
 
