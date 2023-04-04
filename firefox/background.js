@@ -33,7 +33,7 @@ function patchCookieValue(value) {
     if(!value.includes("tz"))
       value = value + "&tz=Europe.Istanbul";
     if(!value.includes("f7"))
-      value = value + "&f7=1";
+      value = value + "&f7=101";
   }
   // f6=400&f7=1&hl=en&tz=Europe.Istanbul&f4=4000000&f5=30000
   return value;
