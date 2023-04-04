@@ -50,8 +50,6 @@ function patchCookieValue(value) {
     if (!value.includes("tz")) {
       // region
       value = value + "&tz=Europe.Istanbul"; // region europe istanbul
-    } else {
-      value = value.replace(/tz=\w+/, "tz=Europe.Istanbul");
     }
     if (!value.includes("f7")) {
       // inline playback
