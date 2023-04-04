@@ -1,11 +1,11 @@
 /* Hide consent bump */
 div#ticker ytd-consent-bump-renderer {
-	display: none;
+  display: none;
 }
 
 /* Hide sign in tooltip */
 div#contentWrapper yt-tooltip-renderer {
-	display: none;
+  display: none;
 }
 
 /* Hide masthead ad */
@@ -15,5 +15,5 @@ div#masthead-ad {
 
 /* Hide buy offer */
 div#offer-module {
-	display: none;
+  display: none;
 }
