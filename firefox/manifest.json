@@ -15,10 +15,7 @@
       "css": ["css/darktube.css"]
     }
   ],
-  "permissions": [
-    "cookies",
-    "*://*.youtube.com/"
-  ],
+  "permissions": ["cookies", "*://*.youtube.com/"],
   "background": {
     "scripts": ["background.js"]
   }
