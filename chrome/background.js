@@ -29,23 +29,39 @@ function setCookie(storeId) {
 }
 
 // Patches cookie value for dark theme (f6) and autoplay (f5)
+// Patches cookie value for dark theme (f6) and autoplay (f5)
 function patchCookieValue(value) {
-  if (!value) value = "f6=400&f5=30000";
-  else {
+  if (!value) {
+    value = "f6=400&f5=30000&hl=en&tz=Europe.Istanbul&f7=1";
+  } else {
     value = value.replace(/f6=\d+/, "f6=400");
-    if (!value.includes("f6")) value = value + "&f6=400";
-    if (!value.includes("f5"))
-      // User hasn't made yet his own choice about autoplay
+    if (!value.includes("f6")) {
+      value = value + "&f6=400";
+    }
+    if (!value.includes("f5")) {
+      // autoplay
       value = value + "&f5=30000"; // Disable it
-    if (!value.includes("hl"))
+    } else {
+      value = value.replace(/f5=\d+/, "f5=30000");
+    }
+    if (!value.includes("hl")) {
       // language setting
       value = value + "&hl=en"; // lang = en
-    if (!value.includes("tz"))
+    } else {
+      value = value.replace(/hl=\w+/, "hl=en");
+    }
+    if (!value.includes("tz")) {
       // region
       value = value + "&tz=Europe.Istanbul"; // region europe istanbul
-    if (!value.includes("f7"))
+    } else {
+      value = value.replace(/tz=\w+/, "tz=Europe.Istanbul");
+    }
+    if (!value.includes("f7")) {
       // inline playback
       value = value + "&f7=1"; // disable
+    } else {
+      value = value.replace(/f7=\d+/, "f7=1");
+    }
   }
   return value;
 }
