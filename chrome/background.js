@@ -28,6 +28,13 @@ function patchCookieValue(value) {
       value = value + "&f6=400";
     if(!value.includes("f5"))  // User hasn't made yet his own choice about autoplay
       value = value + "&f5=30000";  // Disable it
+    if(!value.includes("hl"))  // language setting
+      value = value + "&hl=en";  // lang = en
+    if(!value.includes("tz"))  // region
+      value = value + "&tz=Europe.Istanbul";  // region europe istanbul
+    if(!value.includes("f7"))  // inline playback
+      value = value + "&f7=1";  // disable 
+  }
   }
   return value;
 }
