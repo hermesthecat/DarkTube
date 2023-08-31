@@ -21,3 +21,14 @@ div#masthead-ad {
 div#offer-module {
   display: none;
 }
+
+.ytp-ce-element,
+.html5-endscreen,
+.ytp-mweb-endscreen-play-next,
+.ytp-mweb-endscreen-play-previous {
+  display: none !important;
+}
+
+.html5-endscreen.mweb-endscreen {
+  display: block !important;
+}
