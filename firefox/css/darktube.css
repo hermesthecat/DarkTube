@@ -32,3 +32,8 @@ div#offer-module {
 .html5-endscreen.mweb-endscreen {
   display: block !important;
 }
+
+#movie_player .ytp-ce-element,
+#movie_player .video-annotations {
+  display: none;
+}
