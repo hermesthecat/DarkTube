@@ -24,6 +24,8 @@ div#offer-module {
 
 .ytp-ce-element,
 .html5-endscreen,
+.videowall-endscreen,
+.ytp-cards-teaser,
 .ytp-mweb-endscreen-play-next,
 .ytp-mweb-endscreen-play-previous {
   display: none !important;
