@@ -21,3 +21,19 @@ div#masthead-ad {
 div#offer-module {
   display: none;
 }
+
+.ytp-ce-element {
+  display: none;
+}
+
+.ytp-cards-teaser {
+  display: none;
+}
+
+.html5-endscreen {
+  display: none;
+}
+
+.videowall-endscreen {
+  display: none;
+}
